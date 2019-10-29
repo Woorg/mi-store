@@ -1,0 +1,232 @@
+.promo
+  &__container
+    position: relative
+    padding-top: 102px
+    padding-bottom: 200px
+    @include r(847px)
+      padding-top: 0
+      padding-bottom: 63px
+  &__w
+    // min-height: 100vh
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+  &__content
+    max-width: 856px
+    width: 100%
+    // min-height: 100vh
+    // flex-shrink: 1
+    flex-grow: 0
+    display: flex
+    flex-direction: column
+    
+    @include r(847px)
+      max-width: 100%
+
+    @include r(847px)
+      max-width: 100%
+
+  &__title
+    margin-bottom: 39px
+    font-weight: 700
+    @include font-size(36px)
+    // font-size: 36px
+    line-height: 1.3
+    letter-spacing: 0.84px
+    color: #000000
+
+    
+
+    span
+      color: #0b8481
+    i,
+    em
+      color: #ec5169
+      
+    @include r(847px)
+      font-size: 23px
+      text-align: center
+
+    @include r(425px)
+      text-align: left
+      @include font-size(23px)
+
+
+  &__title-del
+    text-decoration: line-through 
+    
+  &__list-w
+    @include r(847px)
+      margin-top: 56px
+      margin-left: auto
+      margin-right: auto
+      order: 2
+
+  &__list
+    margin-bottom: 40px
+    display: flex
+    // flex-wrap: wrap
+    
+    font-size: 12px
+    font-weight: 500
+    line-height: 1.5
+    letter-spacing: .3px
+    
+    @include r(847px)
+      margin-bottom: 0
+      max-width: 280px
+      flex-wrap: wrap
+      order: 1
+      justify-content: center
+
+    @include r(425px)
+      max-width: 100%
+      justify-content: flex-start
+      
+  &__item
+    margin-bottom: 30px
+    width: 100%
+    display: flex
+    flex-shrink: 1
+    align-items: center
+
+    &:nth-child(1)
+      margin-top: 12px
+      margin-right: 36px
+      max-width: 286px
+      flex-shrink: 0
+      // @include r(1440px)
+      //   max-width: 100%
+      @include r(847px)
+        order: 3
+      .promo__item-text
+        margin-top: 6px
+        margin-left: 30px
+
+    &:nth-child(2)
+      margin-right: 71px
+      padding-top: 18px
+      max-width: 208px
+      @include r(1440px)
+        max-width: 100%
+      @include r(847px)
+        order: 2
+        
+      .promo__item-text
+        margin-left: 26px
+    &:nth-child(3)
+      max-width: 206px
+      @include r(1440px)
+        max-width: 100%
+      @include r(847px)
+        order: 1
+        
+      .promo__item-text
+        margin-left: 28px
+        
+  &__form-w
+    display: flex
+    flex-direction: column
+        
+  &__text
+    margin-bottom: 22px
+    line-height: 1.3
+    font-size: 21px
+    font-weight: 500
+    line-height: 1.33
+    letter-spacing: 0.44px
+  
+    @include r(847px)
+      margin-top: 20px
+      order: 1
+
+    
+
+  &__images
+    margin-top: -137px
+    max-width: 654px
+    width: 100%
+    display: flex
+    align-items: flex-end
+    flex-shrink: 1
+    flex-grow: 0
+    
+    @include r(1785px)
+      margin-bottom: 50px
+      order: -1
+    //   max-width: 41.3%
+
+    @include r(847px)
+      margin-top: 0
+      margin-left: auto
+      margin-right: auto 
+      max-width: 336px
+
+    @include r(425px)
+      max-width: 100%
+        
+  &__phones
+    // max-width: 479px
+    flex-shrink: 1
+    order: 1
+
+    @include r(425px)
+      max-width: 80%
+    
+  &__fitness-w
+    position: relative
+    margin-bottom: 67px
+    max-width: 187px
+    width: 100%
+    
+    @include r(847px)
+      order: 1
+      margin-bottom: 0
+      margin-left: -40px
+
+
+
+  &__fitness-tracker
+    max-width: 187px
+    
+    @include r(847px)
+      max-width: 116px
+    
+    @include r(425px)
+      max-width: 80%
+
+  &__badge-w
+    position: absolute
+    bottom: -13px
+    right: -50px
+    width: 99px
+    height: 99px
+    background-color: #dddddd
+    background-image: linear-gradient(to top, #ed3c58 0%, #eb6c80 100%)
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.35)
+    border-radius: 50%
+    @include r(847px)
+      right: -7px
+      bottom: 0
+      width: 50px
+      height: 50px
+
+  &__badge
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 50px
+    height: 50px
+
+    content: "" 
+    // @include bg($gift-icon)
+    transform: translate(-50%, -50%)
+    
+    @include r(847px)
+      width: 22px
+      height: 22px
+
+        
+        
+      

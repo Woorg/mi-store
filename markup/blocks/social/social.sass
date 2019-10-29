@@ -1,0 +1,40 @@
+.social
+  color: #fff
+  font-weight: 100 
+  letter-spacing: -0.4px
+  &__title
+    margin-right: 14px
+    margin-bottom: 20px
+    display: block
+    font-size: 27px
+    letter-spacing: -0.1px
+
+  &__list
+    display: flex
+  &__item
+    margin-right: 25px
+  &:last-child
+    margin-right: 0
+
+  &__link
+    display: block
+    text-align: left
+    text-indent: -9999px
+
+  &__item_vk
+    .social__link
+      @include bg($vk-icon)
+  &__item_instagram
+    .social__link
+      @include bg($inst-icon)
+  &__item_fb
+    .social__link
+      @include bg($fb-icon)
+  &__item_twitter
+    .social__link
+      @include bg($twitter-icon)
+  &__item_youtube
+    .social__link
+      @include bg($youtube-icon)
+
+    

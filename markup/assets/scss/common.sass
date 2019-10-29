@@ -1,0 +1,88 @@
+html,
+body
+  height: 100%
+
+.page
+  position: relative
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  // height: 100vh
+
+  color: #000000
+  font-display: swap
+  font-family: $g
+  // overflow: hidden
+
+  &__inner
+    flex-grow: 1
+    flex-shrink: 0
+    flex-basis: auto
+    background-image: linear-gradient(to top, #b0c6d6, #eeede9, #b5d3dd)
+    background-color: #1d1d1d
+    overflow: hidden
+    
+    @include r(845px) 
+      background-color: #1d1d1d
+      background-image: linear-gradient(to top, #b0c6d6 0%, #eeede9 100%)
+  
+  // &__footer
+  //   display: none
+
+  //   @include rmin(845px)
+  //     display: block
+  //     height: auto
+    
+.container
+  margin: auto
+  padding-right: 15px
+  padding-left: 15px
+  width: 100%
+  
+  @include rmin(1170px)
+    padding-right: 140px
+    // padding-right: 7.3%
+    padding-left: 140px
+    // padding-left: 7.3%
+    // max-width: 1170px
+    
+  @include rmin(640px)
+    padding-left: 7%
+    padding-right: 7%
+
+img
+  max-width: 100%
+  height: auto
+
+
+
+
+.mfp-bg
+  background-color: #1d1d1d
+  background-image: linear-gradient(to top, #14151c 0%, #484a5a 100%)
+
+
+.mfp-container
+  padding-right: 0
+  padding-left: 0
+
+button.mfp-close
+  top: 33px
+  right: 25px
+  width: 48px
+  height: 48px
+  background: url('../images/general/close-icon.png') 0 0 no-repeat
+  background-size: cover
+  text-indent: -9999px
+  opacity: 1
+  @include rmin(640px)
+    display: none
+  &:hover,
+  &:focus,
+  &:active
+    top: 33px
+    width: 48px
+    height: 48px
+    opacity: .9
+    background-position: 0 0
+    

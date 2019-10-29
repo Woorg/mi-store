@@ -1,0 +1,48 @@
+.button
+  @include resetbutton()
+  padding-top: 18px
+  padding-right: 30px
+  padding-bottom: 17px
+  padding-left: 30px
+  height: 58px
+  display: inline-block
+  vertical-align: top
+  background-color: #ffffff
+  background-image: linear-gradient(88deg, #ed3b57 0%, #eb6f82 100%)
+
+  color: #fff
+
+  font-size: 25px
+  font-weight: 700
+  line-height: 1
+  letter-spacing: 1.2px
+
+  text-transform: uppercase
+  text-decoration: none
+  text-align: center
+  box-shadow: 0 0 7px rgba(84, 175, 180, 0.78)
+  border-radius: 10px
+  opacity: 1
+  @include tr(all .3s ease)
+  
+  @include r(425px)
+    box-shadow: 0 0 7px rgba(84, 175, 180, 0.78)
+    background-color: #ffffff
+    background-image: linear-gradient(88deg, #ed3b57 0%, #d9475e 100%)
+
+  @include rmin(640px)
+    padding-left: 50px
+    padding-right: 50px
+
+  &:hover
+    opacity: .9
+    background-image: linear-gradient(88deg, darken(#ed3b57, 10) 0%, darken(#eb6f82, 10) 100%)
+    @include tr(all .3s ease)
+
+
+.text
+  font-size: 36px
+  font-weight: 700 
+  line-height: 1.3
+  letter-spacing: 0.84px
+

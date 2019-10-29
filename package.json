@@ -1,0 +1,33 @@
+{
+  "name": "awesome_project",
+  "version": "1.0.0",
+  "description": "Your awesome project description",
+  "main": "gulpfile.js",
+  "directories": {},
+  "dependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "bootstrap": "^4.3.1",
+    "bounds.js": "^1.0.3",
+    "dropzone": "^5.5.1",
+    "exit-intent": "^1.1.0",
+    "ion-rangeslider": "^2.3.0",
+    "jquery": "^3.4.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "magnific-popup": "^1.1.0",
+    "masonry-layout": "^4.2.2",
+    "rfs": "^9.0.0",
+    "slick-carousel": "^1.8.1",
+    "svg4everybody": "^2.1.9",
+    "vanilla-lazyload": "^12.0.2",
+    "webp-hero": "0.0.0-dev.24"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

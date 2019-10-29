@@ -1,0 +1,28 @@
+.footer
+  display: block
+  @include rmin(640px)
+    display: none
+
+  &__container
+    padding-bottom: 30px
+    display: flex
+    flex-direction: column
+    // justify-content: center
+    align-items: center
+
+    @include r(425px)
+      align-items: flex-start
+
+  &__phone
+    margin-bottom: 30px
+    color: #000000
+    font-size: 24px
+    font-weight: 900
+    line-height: 1
+    letter-spacing: 0.48px
+    text-decoration: none
+  &__logo
+    max-width: 193px
+
+
+    

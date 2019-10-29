@@ -1,0 +1,34 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../blocks/head/head.pug
+  include ../blocks/header/header.pug
+  include ../blocks/promo/promo.pug
+
+  include ../blocks/footer/footer.pug
+  include ../blocks/popup/popup.pug
+
+  head
+      +head(head.defaults)
+  body.page
+    |%=symbols=%
+
+    .page__inner
+      +header()
+      +promo()
+      +footer()
+      +popup()#thanks.mfp-hide.popup_thanks
+      +popup-leave()#leave.mfp-hide.popup_leave
+      +popup-callback()#callback.mfp-hide.popup_callback
+
+    //- .page__footer
+
+
+  //- script(src='%=static=%js/separate-js/lazyload.min.js')
+  script(src='assets/js/separate-js/jquery.min.js')
+  script(src='assets/js/separate-js/jquery.exitintent.min.js')
+  script(src='assets/js/separate-js/jquery.mask.min.js')
+
+  //- script(src='%=static=%js/separate-js/slick.min.js')
+  script(src='assets/js/separate-js/jquery.magnific-popup.min.js')
+  script(src='assets/js/main%=hash=%%=min=%.js')

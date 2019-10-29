@@ -1,0 +1,74 @@
+// .nav
+//   position: relative
+//   display: flex
+//   &__trigger
+//     @include resetbutton()
+//     display: none
+//     width: 36px
+//     height: 39px
+//     background-size: cover
+//     fill: #fff
+//     @include tr(fill .3s ease)
+    
+//     @include r(1030px)
+//       display: block
+      
+//     &:hover
+//       fill: darken(#fff, 10)   
+//       @include tr(fill .3s ease)
+
+//   &__trigger_active + .nav__list-w
+//     position: absolute
+//     z-index: 1
+//     top: 100%
+//     right: 0
+//     padding-top: 20px
+//     padding-bottom: 20px
+//     width: 300px
+//     display: block
+//     @include tr(all .3s ease)
+
+//     .nav__list
+//       display: block
+//       text-align: right
+      
+//     .nav__item
+//       margin-bottom: 10px
+//       margin-right: 0
+//       line-height: 1.25
+
+//   &__list-w
+//     display: flex
+      
+//     @include r(1030px)
+//       display: none
+
+
+//   &__list
+//     display: flex
+    
+//   &__item
+//     margin-right: 22px
+//     color: #fff 
+//     font-size: 13px
+//     font-weight: 100
+//     line-height: 1.3 
+//     text-transform: uppercase
+//     // letter-spacing: -0.42px
+//     letter-spacing: -0.12px
+//     @include tr(color .3s ease)
+//     &:hover
+//       color: #660603
+//       @include tr(color .3s ease)
+
+//     &:last-child
+//       margin-right: 0
+      
+//   &__item_active
+//     color: #660603
+//     @include tr(color .3s ease)
+    
+//   &__link
+//     color: inherit
+//     text-decoration: none
+

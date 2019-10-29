@@ -1,0 +1,40 @@
+mixin promo(data)
+  section.promo
+    .promo__container.container
+      .promo__w
+        .promo__content
+          h1.promo__title.title Купи Xiaomi Redmi Note 8 PRO 6/128 <br/>по самой низкой цене <span>18 390Р</span> и получи <br/>фитнес-трекер <i>Mi Band 3</i> стоимостью <br/><span class="promo__title-del">2490Р</span> <em>В ПОДАРОК</em>
+
+          .promo__list-w
+            ul.promo__list
+              li.promo__item
+                img.promo__icon(src='assets/images/general/advantages-icon-1.png', srcset='assets/images/general/advantages-icon-1@2x.png 2x, assets/images/general/advantages-icon-1@3x.png 3x')
+                .promo__item-text Самая низкая цена <br/>на Redmi Note 8 PRO <br/>+ фитнес-трекер в подарок!
+              li.promo__item
+                img.promo__icon(src='assets/images/general/advantages-icon-2.png', srcset='assets/images/general/advantages-icon-2@2x.png 2x, assets/images/general/advantages-icon-2@3x.png 3x')
+                .promo__item-text Способы оплаты:<br/>- наличными<br/>- по карте<br/>- в рассрочку
+
+              li.promo__item
+                img.promo__icon(src='assets/images/general/advantages-icon-3.png', srcset='assets/images/general/advantages-icon-3@2x.png 2x, assets/images/general/advantages-icon-3@3x.png 3x')
+                .promo__item-text Гарантия 2 года
+
+          .promo__form-w
+
+            .promo__text Телефоны всегда в наличии <br/>Всего 50 подарков, успей забрать свой!
+
+            .promo__form.form
+              form.form__w(action="mail.php" method="post")
+                input.form__hidden(type="hidden", name="form_title", value="Заказать звонок")
+                .form__row
+                  .form__field.form__field_phone
+                    input.form__input(type="text", value="", placeholder="Введите телефон", name="phone" required)
+                  input.form__submit(type="submit", value="Забронировать подарок")
+
+        .promo__images
+          img.promo__phones(src='assets/images/content/phones.png', srcset='assets/images/content/phones@2x.png 2x, assets/images/content/phones@3x.png 3x' alt='phone')
+
+          .promo__fitness-w
+            img.promo__fitness-tracker(src='assets/images/content/fitness-tracker.png', srcset='assets/images/content/fitness-tracker@2x.png 2x, assets/images/content/fitness-tracker@3x.png 3x' alt='fitness-tracker')
+            
+            .promo__badge-w
+              img.promo__badge(src='assets/images/general/gift-icon.png', srcset='assets/images/general/gift-icon@2x.png 2x, assets/images/general/gift-icon@3x.png 3x')
